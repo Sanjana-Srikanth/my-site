@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://statuessg.com/sitemap.xml
+Sitemap: https://sanjana-srikanth.github.io/my-site/sitemap.xml
