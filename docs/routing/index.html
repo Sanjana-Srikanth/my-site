@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/SlidingTestimonial.nGruvXQ0.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/0.Ba7HRqfQ.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.B6WSCz-B.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ChHKPXre.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BN_7tDGw.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/B-AfhhPf.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.DOrWrzze.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DsnmJJEf.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/y19cvIXd.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C5m90Y_Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.DpU730sv.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Be-1K4tc.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CIB3XdOA.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CqlPqmze.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/N2sA-wAv.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BSrUNqIp.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/3.B56PAIOF.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Comz3Vm0.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/7ygnQesN.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D0ArBEsA.js"><!--hlt6rm--><!--[--><meta name="description" content="How Statue handles routing for markdown content"/><!--]--><!----><title>Routing</title>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><nav class="bg-[var(--color-background)]  text-[var(--color-foreground)] fixed w-full top-0 z-50 transition-transform duration-300 will-change-transform translate-y-0" style="view-transition-name: navbar;"><div class="container mx-auto px-4"><div class="flex items-center justify-between h-16"><div class="flex items-center"><a href="/" class="flex items-center space-x-2"><!--[!--><!--[!--><!--]--><!--]--> <!--[--><span class="font-bold text-xl text-[var(--color-foreground)]">Statue SSG</span><!--]--></a></div> <div class="hidden md:flex items-center space-x-4"><!--[--><!--[--><a href="/" class="py-2 px-3 font-medium text-sm transition-colors duration-200 text-[var(--color-foreground)] hover:text-[var(--color-primary)]">Home</a><!--]--><!--[--><a href="/about" class="py-2 px-3 font-medium text-sm transition-colors duration-200 text-[var(--color-foreground)] hover:text-[var(--color-primary)]">About</a><!--]--><!--]--> <!--[--><!--[--><a href="/blog" class="py-2 px-3 font-medium text-sm transition-colors duration-200 text-[var(--color-foreground)] hover:text-[var(--color-primary)]">Blog</a><!--]--><!--[--><a href="/docs" class="py-2 px-3 font-medium text-sm transition-colors duration-200 text-[var(--color-primary)]">Docs</a><!--]--><!--]--> <!--[--><div class="ml-2 w-56"><div class="search-container relative  svelte-16knhue" role="search" aria-label="Site search"><div class="relative"><div class="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--color-muted)]"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></div> <input type="text" value="" placeholder="Search..." class="search-input w-full pl-10 pr-10 py-2 rounded-lg border border-[var(--color-border)] bg-[var(--color-background)] text-[var(--color-foreground)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition-all  svelte-16knhue" aria-label="Search input" aria-autocomplete="list" aria-controls="search-results"/> <!--[!--><!--]--> <!--[!--><!--]--></div> <!--[!--><!--]--> <!--[!--><!--]--></div><!----></div><!--]--> <!--[!--><!--]--></div> <div class="md:hidden"><button class="text-[var(--color-muted)] hover:text-[var(--color-primary)] focus:outline-none"><!--[!--><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg><!--]--></button></div></div></div> <!--[!--><!--]--></nav><!----> <main><!----><!--[!--><!--[--><!--[--><div class="docs-layout min-h-screen bg-[var(--color-background)] svelte-h5qt01"><button class="fixed bottom-4 right-4 z-50 lg:hidden flex items-center justify-center w-12 h-12 rounded-full bg-[var(--color-primary)] text-[var(--color-on-primary)] shadow-lg" aria-label="Toggle sidebar"><!--[!--><svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path></svg><!--]--></button> <!--[!--><!--]--> <div class="container mx-auto px-4 pt-16"><div class="flex"><div class="hidden lg:block w-64 flex-shrink-0"><div class="sticky top-16 h-[calc(100vh-4rem)] overflow-y-auto"><aside class="docs-sidebar w-64 flex-shrink-0 h-full overflow-y-auto bg-[var(--color-background)] svelte-4geowz"><nav class="pt-5 pb-4 pr-4"><ul class="space-y-1"><!--[--><li><!--[!--><!--[--><a href="/docs/get-started" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Getting Started with Statue</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/components" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Components</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/new-site-checklist" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">New Site Checklist</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/routing" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors bg-[var(--color-primary)]/10 text-[var(--color-primary)]">Routing</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/search" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Search</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/site-config" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Site Configuration</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/templates" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Templates</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/themes" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Themes</a><!--]--><!--]--></li><!--]--></ul></nav></aside><!----></div></div> <div class="fixed left-0 top-16 h-[calc(100vh-4rem)] w-64 z-50 transform transition-transform duration-300 lg:hidden bg-[var(--color-background)] -translate-x-full"><aside class="docs-sidebar w-64 flex-shrink-0 h-full overflow-y-auto bg-[var(--color-background)] svelte-4geowz"><nav class="pt-5 pb-4 pr-4"><ul class="space-y-1"><!--[--><li><!--[!--><!--[--><a href="/docs/get-started" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Getting Started with Statue</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/components" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Components</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/new-site-checklist" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">New Site Checklist</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/routing" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors bg-[var(--color-primary)]/10 text-[var(--color-primary)]">Routing</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/search" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Search</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/site-config" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Site Configuration</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/templates" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Templates</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/themes" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Themes</a><!--]--><!--]--></li><!--]--></ul></nav></aside><!----></div> <main class="flex-1 min-w-0 min-h-[calc(100vh-4rem)] relative"><div class="hidden lg:block absolute left-0 top-12 bottom-0 w-px bg-[var(--color-border)]"></div> <div class="px-4 sm:px-6 lg:px-8 py-8"><!--[--><!--[!--><!--]--> <article class="docs-content"><header class="mb-8 pb-8 border-b border-[var(--color-border)]"><!--[--><h1 class="text-3xl sm:text-4xl font-bold text-[var(--color-foreground)] mb-4">Routing</h1><!--]--> <!--[--><p class="text-lg text-[var(--color-muted)] leading-relaxed">How Statue handles routing for markdown content</p><!--]--> <!--[!--><!--]--></header> <div class="prose prose-docs max-w-none pb-16"><!---->
+<p>Statue extends SvelteKit&#39;s routing to automatically create pages from markdown files. This guide covers Statue-specific routing behavior.</p>
+<blockquote>
+<p><strong>Contribute to Statue!</strong> Built a useful component, theme, or template? Share it with the community—it only takes a single command. <strong><a href="https://github.com/accretional/statue/blob/main/CONTRIBUTING.md">Learn how →</a></strong></p>
+</blockquote>
+<blockquote>
+<p><strong>New to SvelteKit routing?</strong> Read the <a href="https://svelte.dev/docs/kit/routing">SvelteKit Routing docs</a> first for the basics.</p>
+</blockquote>
+<hr>
+<h2>Two Types of Routes</h2>
+<h3>1. Content Routes (Automatic)</h3>
+<p>Markdown files in <code>content/</code> become pages automatically:</p>
+<pre><code>content/blog/my-post.md    →  /blog/my-post
+content/docs/guide.md      →  /docs/guide
+content/about.md           →  /about
+</code></pre>
+<p>Statue handles this automatically - no route files needed.</p>
+<h3>2. Custom Routes (Manual)</h3>
+<p>Standard SvelteKit routes in <code>src/routes/</code>:</p>
+<pre><code>src/routes/pricing/+page.svelte    →  /pricing
+src/routes/contact/+page.svelte    →  /contact
+</code></pre>
+<p>Full control over the page. <strong><a href="https://svelte.dev/docs/kit/routing">Learn more →</a></strong></p>
+<hr>
+<h2>How Content Routing Works</h2>
+<p>Statue uses two special catch-all routes to handle markdown content:</p>
+<h3><code>[...slug]/+page.svelte</code></h3>
+<p>Renders individual markdown pages.</p>
+<p><strong>Matches:</strong></p>
+<ul>
+<li><code>/blog/hello-world</code> → <code>content/blog/hello-world.md</code></li>
+<li><code>/docs/guide</code> → <code>content/docs/guide.md</code></li>
+<li><code>/about</code> → <code>content/about.md</code></li>
+</ul>
+<p><strong>How it works:</strong></p>
+<ol>
+<li>User visits <code>/blog/hello-world</code></li>
+<li>SvelteKit matches the <code>[...slug]</code> route</li>
+<li><code>+page.server.js</code> looks up <code>content/blog/hello-world.md</code></li>
+<li>Markdown is parsed and rendered</li>
+</ol>
+<h3><code>[directory]/+page.svelte</code></h3>
+<p>Lists all content in a directory.</p>
+<p><strong>Matches:</strong></p>
+<ul>
+<li><code>/blog</code> → Lists all files in <code>content/blog/</code></li>
+<li><code>/docs</code> → Lists all files in <code>content/docs/</code></li>
+</ul>
+<p><strong>How it works:</strong></p>
+<ol>
+<li>User visits <code>/blog</code></li>
+<li>SvelteKit matches the <code>[directory]</code> route</li>
+<li><code>+page.server.js</code> finds all <code>*.md</code> files in <code>content/blog/</code></li>
+<li>Renders as a list of posts</li>
+</ol>
+<hr>
+<h2>Route Priority</h2>
+<p>When routes conflict, SvelteKit follows this priority:</p>
+<ol>
+<li><strong>Static routes</strong> (e.g., <code>src/routes/about/+page.svelte</code>)</li>
+<li><strong>Dynamic routes</strong> (e.g., <code>src/routes/[directory]/+page.svelte</code>)</li>
+<li><strong>Catch-all routes</strong> (e.g., <code>src/routes/[...slug]/+page.svelte</code>)</li>
+</ol>
+<h3>Example Conflict</h3>
+<p>If you have both:</p>
+<ul>
+<li><code>src/routes/about/+page.svelte</code> (custom Svelte page)</li>
+<li><code>content/about.md</code> (markdown content)</li>
+</ul>
+<p>The Svelte page wins - the markdown won&#39;t be shown.</p>
+<p><strong>Fix:</strong> Either remove the Svelte file or rename the markdown file.</p>
+<hr>
+<h2>Customizing Content Pages</h2>
+<p>You can customize how markdown content is displayed by editing Statue&#39;s route templates.</p>
+<h3>Content Pages Template</h3>
+<p><strong>File:</strong> <code>src/routes/[...slug]/+page.svelte</code></p>
+<p><strong>What you must include:</strong></p>
+<pre><code class="language-svelte">&lt;script&gt;
+  export let data;  // Statue passes content here
+&lt;/script&gt;
+</code></pre>
+<p><strong>Typical customization:</strong></p>
+<pre><code class="language-svelte">&lt;script&gt;
+  import { ContentHeader, ContentBody } from &#39;statue-ssg&#39;;
+  export let data;
+
+  $: content = data.content;  // Access the markdown content
+&lt;/script&gt;
+
+&lt;!-- Add your customizations here --&gt;
+&lt;aside class=&quot;table-of-contents&quot;&gt;
+  &lt;!-- Your TOC component --&gt;
+&lt;/aside&gt;
+
+&lt;ContentHeader title={content.metadata.title} /&gt;
+&lt;ContentBody content={content.content} /&gt;
+</code></pre>
+<p><strong>Available in <code>data.content</code>:</strong></p>
+<ul>
+<li><code>metadata.title</code> - From frontmatter</li>
+<li><code>metadata.description</code> - From frontmatter</li>
+<li><code>metadata.date</code> - From frontmatter</li>
+<li><code>content</code> - Rendered HTML</li>
+</ul>
+<h3>Directory Pages Template</h3>
+<p><strong>File:</strong> <code>src/routes/[directory]/+page.svelte</code></p>
+<p><strong>What you must include:</strong></p>
+<pre><code class="language-svelte">&lt;script&gt;
+  export let data;  // Statue passes directory content here
+&lt;/script&gt;
+</code></pre>
+<p><strong>Typical customization:</strong></p>
+<pre><code class="language-svelte">&lt;script&gt;
+  import { DirectoryHeader, DirectoryContent } from &#39;statue-ssg&#39;;
+  export let data;
+
+  // Add search/filter functionality
+  let searchTerm = &#39;&#39;;
+  $: filtered = data.directoryContent.filter(post =&gt;
+    post.metadata.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+&lt;/script&gt;
+
+&lt;DirectoryHeader title={data.currentDirectory.title} /&gt;
+
+&lt;!-- Add your customizations --&gt;
+&lt;input bind:value={searchTerm} placeholder=&quot;Search...&quot; /&gt;
+
+&lt;DirectoryContent content={filtered} /&gt;
+</code></pre>
+<p><strong>Available in <code>data</code>:</strong></p>
+<ul>
+<li><code>currentDirectory</code> - Info about this directory</li>
+<li><code>directoryContent</code> - Array of content items</li>
+<li><code>subDirectories</code> - Subdirectories in this directory</li>
+</ul>
+<p><strong>Don&#39;t modify <code>+page.server.js</code> files unless you know what you&#39;re doing</strong> - they contain the logic that loads markdown content.</p>
+<hr>
+<h2>URL Structure</h2>
+<h3>Content → URL Mapping</h3>
+<pre><code>content/blog/hello.md               →  /blog/hello
+content/docs/guides/intro.md        →  /docs/guides/intro
+content/projects/2024/project.md    →  /projects/2024/project
+</code></pre>
+<p>The folder structure becomes the URL structure.</p>
+<h3>Best Practices</h3>
+<p><strong>Use descriptive URLs:</strong></p>
+<pre><code>✅ /blog/getting-started-with-statue
+❌ /blog/post1
+</code></pre>
+<p><strong>Use hyphens, not underscores:</strong></p>
+<pre><code>✅ my-blog-post.md
+❌ my_blog_post.md
+</code></pre>
+<p><strong>Keep it simple:</strong></p>
+<pre><code>✅ /docs/routing
+❌ /documentation/advanced-concepts/routing-system
+</code></pre>
+<hr>
+<h2>Creating Custom Routes</h2>
+<p>When creating custom pages for your Statue site, follow these patterns:</p>
+<h3>Required: Enable Prerendering</h3>
+<p><strong>In every <code>+page.server.js</code>, you must include:</strong></p>
+<pre><code class="language-javascript">export const prerender = true;
+</code></pre>
+<p><strong>Why:</strong> Statue generates static sites. Without this, SvelteKit won&#39;t generate the HTML files at build time.</p>
+<h3>Typical Data Loading Pattern</h3>
+<p><strong>For custom pages that need data, use this pattern:</strong></p>
+<pre><code class="language-javascript">// src/routes/pricing/+page.server.js
+export const prerender = true;
+
+export function load() {
+  // Load your data here
+  const plans = [
+    { name: &#39;Free&#39;, price: 0 },
+    { name: &#39;Pro&#39;, price: 29 }
+  ];
+
+  return { plans };
+}
+</code></pre>
+<p><strong>Why:</strong> The <code>load</code> function runs at build time and passes data to your page component.</p>
+<h3>Page Component</h3>
+<pre><code class="language-svelte">&lt;!-- src/routes/pricing/+page.svelte --&gt;
+&lt;script&gt;
+  export let data;  // Data from +page.server.js
+&lt;/script&gt;
+
+&lt;h1&gt;Pricing&lt;/h1&gt;
+{#each data.plans as plan}
+  &lt;div&gt;{plan.name}: ${plan.price}/mo&lt;/div&gt;
+{/each}
+</code></pre>
+<p><strong>Want to do something different?</strong> Check <a href="https://svelte.dev/docs/kit/routing">SvelteKit&#39;s routing docs</a> for other patterns, but note that Statue requires static prerendering to work.</p>
+<hr>
+<h2>Common Issues</h2>
+<h3>404 on existing markdown file</h3>
+<p><strong>Check:</strong></p>
+<ol>
+<li>File is in <code>content/</code> directory?</li>
+<li>Has <code>.md</code> extension?</li>
+<li>Restarted dev server? (<code>npm run dev</code>)</li>
+</ol>
+<h3>Custom route not working</h3>
+<p>See <a href="https://svelte.dev/docs/kit/routing">SvelteKit routing docs</a> for route setup.</p>
+<h3>Changes not appearing</h3>
+<p>Clear SvelteKit cache:</p>
+<pre><code class="language-bash">rm -rf .svelte-kit build
+npm run dev
+</code></pre>
+<hr>
+<h2>Learn More</h2>
+<h3>Statue Docs</h3>
+<ul>
+<li><strong><a href="https://statue.dev">Statue.dev</a></strong> - Official documentation</li>
+<li><strong><a href="/docs/get-started">Get Started</a></strong> - Overview</li>
+<li><strong><a href="/docs/site-config">Site Config</a></strong> - Configuration</li>
+<li><strong><a href="/docs/components">Components</a></strong> - Build pages</li>
+</ul>
+<h3>SvelteKit Docs</h3>
+<ul>
+<li><strong><a href="https://svelte.dev/docs/kit/routing">Routing</a></strong> - File-based routing basics</li>
+<li><strong><a href="https://svelte.dev/docs/kit/load">Loading Data</a></strong> - Server data loading</li>
+<li><strong><a href="https://svelte.dev/docs/kit/advanced-routing">Advanced Routing</a></strong> - Layouts, groups, matchers</li>
+</ul>
+<!----></div></article><!----><!--]--></div></main> <!--[--><div class="hidden xl:block w-64 flex-shrink-0"><div class="sticky top-16 pt-5 px-6"><!--[!--><!--]--><!----></div></div><!--]--></div></div></div><!--]--><!--]--><!--]--><!----><!----></main> <footer class="bg-[var(--color-card)] text-[var(--color-muted)] py-10 border-t border-[var(--color-border)]"><div class="container mx-auto px-4"><div class="sitemap mt-6 pt-4 mb-8"><div class="sitemap-grid grid grid-cols-2 md:grid-cols-3 gap-4 svelte-xmj80j"><div class="sitemap-category svelte-xmj80j"><h4 class="text-lg font-medium mb-2 text-[var(--color-foreground)]">Main Pages</h4> <ul class="ml-2 space-y-1"><li><a href="/" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Home Page</a></li> <!--[--><!--[--><!--[--><li><a href="/blog" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Blog</a></li><!--]--><!--[--><li><a href="/docs" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Docs</a></li><!--]--><!--[!--><!--]--><!--]--><!--]--></ul></div> <!--[--><!--[--><!--[--><div class="sitemap-category svelte-xmj80j"><h4 class="text-lg font-medium mb-2 text-[var(--color-foreground)]"><a href="/blog" class="text-[var(--color-foreground)] hover:text-[var(--color-primary)]">Blog</a></h4> <!--[--><ul class="ml-2 space-y-1"><!--[--><li><a href="/blog/drag-drop-publish" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Drag, Drop, Done</a></li><!--]--></ul><!--]--></div><!--]--><!--[--><div class="sitemap-category svelte-xmj80j"><h4 class="text-lg font-medium mb-2 text-[var(--color-foreground)]"><a href="/docs" class="text-[var(--color-primary)] hover:text-[var(--color-primary)]">Docs</a></h4> <!--[--><ul class="ml-2 space-y-1"><!--[--><li><a href="/docs/components" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Components</a></li><li><a href="/docs/get-started" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Getting Started with Statue</a></li><li><a href="/docs/new-site-checklist" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">New Site Checklist</a></li><li><a href="/docs/routing" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Routing</a></li><li><a href="/docs/search" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Search</a></li><li><a href="/docs/site-config" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Site Configuration</a></li><li><a href="/docs/templates" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Templates</a></li><li><a href="/docs/themes" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Themes</a></li><!--]--></ul><!--]--></div><!--]--><!--[!--><!--]--><!--]--><!--]--></div></div> <div class="text-center"><p>© 2026 Statue SSG. Static site generator developed with SvelteKit.</p> <div class="mt-4 flex justify-center space-x-6"><!--[--><a href="/legal/privacy-policy" class="text-[var(--color-muted)] hover:text-[var(--color-primary)]">Privacy Policy</a><a href="/legal/do-not-sell" class="text-[var(--color-muted)] hover:text-[var(--color-primary)]">Do Not Sell My Information</a><a href="/legal/terms" class="text-[var(--color-muted)] hover:text-[var(--color-primary)]">Terms of Use</a><!--]--></div> <div class="mt-6 flex justify-center space-x-8"><!--[--><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-[var(--color-muted)] hover:text-[var(--color-primary)]" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></a><a href="https://x.com" target="_blank" rel="noopener noreferrer" class="text-[var(--color-muted)] hover:text-[var(--color-primary)]" aria-label="X (Twitter)"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"></path></svg></a><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-[var(--color-muted)] hover:text-[var(--color-primary)]" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-[var(--color-muted)] hover:text-[var(--color-primary)]" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a><!--]--></div></div></div></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1jei726 = {
+						base: new URL("../..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.B6WSCz-B.js"),
+						import("../../_app/immutable/entry/app.DOrWrzze.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data: [{type:"data",data:{globalDirectories:[{name:"blog",path:"content/blog",title:"Blog",url:"/blog",subpages:[{title:"Drag, Drop, Done",url:"/blog/drag-drop-publish"}]},{name:"docs",path:"content/docs",title:"Docs",url:"/docs",subpages:[{title:"Components",url:"/docs/components"},{title:"Getting Started with Statue",url:"/docs/get-started"},{title:"New Site Checklist",url:"/docs/new-site-checklist"},{title:"Routing",url:"/docs/routing"},{title:"Search",url:"/docs/search"},{title:"Site Configuration",url:"/docs/site-config"},{title:"Templates",url:"/docs/templates"},{title:"Themes",url:"/docs/themes"}]},{name:"legal",path:"content/legal",title:"Legal",url:"/legal",subpages:[{title:"Do Not Sell or Share My Personal Information",url:"/legal/do-not-sell"},{title:"Privacy Policy",url:"/legal/privacy-policy"},{title:"Terms of Use",url:"/legal/terms"}]}],searchConfig:{enabled:true,placeholder:"Search...",noResultsText:"No results found",debounceMs:300,minQueryLength:2,maxResults:10,showCategories:true,showDates:true,showExcerpts:true,excerptLength:30},navbarConfig:{siteTitle:"Statue SSG",logo:null,defaultNavItems:[{title:"Home",url:"/"},{title:"About",url:"/about"}],hiddenFromNav:["legal"]}},uses:{}},{type:"data",data:{content:{slug:"routing",path:"docs/routing.md",url:"/docs/routing",directory:"docs",mainDirectory:"docs",depth:1,content:"\n\u003Cp>Statue extends SvelteKit&#39;s routing to automatically create pages from markdown files. This guide covers Statue-specific routing behavior.\u003C/p>\n\u003Cblockquote>\n\u003Cp>\u003Cstrong>Contribute to Statue!\u003C/strong> Built a useful component, theme, or template? Share it with the community—it only takes a single command. \u003Cstrong>\u003Ca href=\"https://github.com/accretional/statue/blob/main/CONTRIBUTING.md\">Learn how →\u003C/a>\u003C/strong>\u003C/p>\n\u003C/blockquote>\n\u003Cblockquote>\n\u003Cp>\u003Cstrong>New to SvelteKit routing?\u003C/strong> Read the \u003Ca href=\"https://svelte.dev/docs/kit/routing\">SvelteKit Routing docs\u003C/a> first for the basics.\u003C/p>\n\u003C/blockquote>\n\u003Chr>\n\u003Ch2>Two Types of Routes\u003C/h2>\n\u003Ch3>1. Content Routes (Automatic)\u003C/h3>\n\u003Cp>Markdown files in \u003Ccode>content/\u003C/code> become pages automatically:\u003C/p>\n\u003Cpre>\u003Ccode>content/blog/my-post.md    →  /blog/my-post\ncontent/docs/guide.md      →  /docs/guide\ncontent/about.md           →  /about\n\u003C/code>\u003C/pre>\n\u003Cp>Statue handles this automatically - no route files needed.\u003C/p>\n\u003Ch3>2. Custom Routes (Manual)\u003C/h3>\n\u003Cp>Standard SvelteKit routes in \u003Ccode>src/routes/\u003C/code>:\u003C/p>\n\u003Cpre>\u003Ccode>src/routes/pricing/+page.svelte    →  /pricing\nsrc/routes/contact/+page.svelte    →  /contact\n\u003C/code>\u003C/pre>\n\u003Cp>Full control over the page. \u003Cstrong>\u003Ca href=\"https://svelte.dev/docs/kit/routing\">Learn more →\u003C/a>\u003C/strong>\u003C/p>\n\u003Chr>\n\u003Ch2>How Content Routing Works\u003C/h2>\n\u003Cp>Statue uses two special catch-all routes to handle markdown content:\u003C/p>\n\u003Ch3>\u003Ccode>[...slug]/+page.svelte\u003C/code>\u003C/h3>\n\u003Cp>Renders individual markdown pages.\u003C/p>\n\u003Cp>\u003Cstrong>Matches:\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ccode>/blog/hello-world\u003C/code> → \u003Ccode>content/blog/hello-world.md\u003C/code>\u003C/li>\n\u003Cli>\u003Ccode>/docs/guide\u003C/code> → \u003Ccode>content/docs/guide.md\u003C/code>\u003C/li>\n\u003Cli>\u003Ccode>/about\u003C/code> → \u003Ccode>content/about.md\u003C/code>\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>How it works:\u003C/strong>\u003C/p>\n\u003Col>\n\u003Cli>User visits \u003Ccode>/blog/hello-world\u003C/code>\u003C/li>\n\u003Cli>SvelteKit matches the \u003Ccode>[...slug]\u003C/code> route\u003C/li>\n\u003Cli>\u003Ccode>+page.server.js\u003C/code> looks up \u003Ccode>content/blog/hello-world.md\u003C/code>\u003C/li>\n\u003Cli>Markdown is parsed and rendered\u003C/li>\n\u003C/ol>\n\u003Ch3>\u003Ccode>[directory]/+page.svelte\u003C/code>\u003C/h3>\n\u003Cp>Lists all content in a directory.\u003C/p>\n\u003Cp>\u003Cstrong>Matches:\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ccode>/blog\u003C/code> → Lists all files in \u003Ccode>content/blog/\u003C/code>\u003C/li>\n\u003Cli>\u003Ccode>/docs\u003C/code> → Lists all files in \u003Ccode>content/docs/\u003C/code>\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>How it works:\u003C/strong>\u003C/p>\n\u003Col>\n\u003Cli>User visits \u003Ccode>/blog\u003C/code>\u003C/li>\n\u003Cli>SvelteKit matches the \u003Ccode>[directory]\u003C/code> route\u003C/li>\n\u003Cli>\u003Ccode>+page.server.js\u003C/code> finds all \u003Ccode>*.md\u003C/code> files in \u003Ccode>content/blog/\u003C/code>\u003C/li>\n\u003Cli>Renders as a list of posts\u003C/li>\n\u003C/ol>\n\u003Chr>\n\u003Ch2>Route Priority\u003C/h2>\n\u003Cp>When routes conflict, SvelteKit follows this priority:\u003C/p>\n\u003Col>\n\u003Cli>\u003Cstrong>Static routes\u003C/strong> (e.g., \u003Ccode>src/routes/about/+page.svelte\u003C/code>)\u003C/li>\n\u003Cli>\u003Cstrong>Dynamic routes\u003C/strong> (e.g., \u003Ccode>src/routes/[directory]/+page.svelte\u003C/code>)\u003C/li>\n\u003Cli>\u003Cstrong>Catch-all routes\u003C/strong> (e.g., \u003Ccode>src/routes/[...slug]/+page.svelte\u003C/code>)\u003C/li>\n\u003C/ol>\n\u003Ch3>Example Conflict\u003C/h3>\n\u003Cp>If you have both:\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ccode>src/routes/about/+page.svelte\u003C/code> (custom Svelte page)\u003C/li>\n\u003Cli>\u003Ccode>content/about.md\u003C/code> (markdown content)\u003C/li>\n\u003C/ul>\n\u003Cp>The Svelte page wins - the markdown won&#39;t be shown.\u003C/p>\n\u003Cp>\u003Cstrong>Fix:\u003C/strong> Either remove the Svelte file or rename the markdown file.\u003C/p>\n\u003Chr>\n\u003Ch2>Customizing Content Pages\u003C/h2>\n\u003Cp>You can customize how markdown content is displayed by editing Statue&#39;s route templates.\u003C/p>\n\u003Ch3>Content Pages Template\u003C/h3>\n\u003Cp>\u003Cstrong>File:\u003C/strong> \u003Ccode>src/routes/[...slug]/+page.svelte\u003C/code>\u003C/p>\n\u003Cp>\u003Cstrong>What you must include:\u003C/strong>\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-svelte\">&lt;script&gt;\n  export let data;  // Statue passes content here\n&lt;/script&gt;\n\u003C/code>\u003C/pre>\n\u003Cp>\u003Cstrong>Typical customization:\u003C/strong>\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-svelte\">&lt;script&gt;\n  import { ContentHeader, ContentBody } from &#39;statue-ssg&#39;;\n  export let data;\n\n  $: content = data.content;  // Access the markdown content\n&lt;/script&gt;\n\n&lt;!-- Add your customizations here --&gt;\n&lt;aside class=&quot;table-of-contents&quot;&gt;\n  &lt;!-- Your TOC component --&gt;\n&lt;/aside&gt;\n\n&lt;ContentHeader title={content.metadata.title} /&gt;\n&lt;ContentBody content={content.content} /&gt;\n\u003C/code>\u003C/pre>\n\u003Cp>\u003Cstrong>Available in \u003Ccode>data.content\u003C/code>:\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ccode>metadata.title\u003C/code> - From frontmatter\u003C/li>\n\u003Cli>\u003Ccode>metadata.description\u003C/code> - From frontmatter\u003C/li>\n\u003Cli>\u003Ccode>metadata.date\u003C/code> - From frontmatter\u003C/li>\n\u003Cli>\u003Ccode>content\u003C/code> - Rendered HTML\u003C/li>\n\u003C/ul>\n\u003Ch3>Directory Pages Template\u003C/h3>\n\u003Cp>\u003Cstrong>File:\u003C/strong> \u003Ccode>src/routes/[directory]/+page.svelte\u003C/code>\u003C/p>\n\u003Cp>\u003Cstrong>What you must include:\u003C/strong>\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-svelte\">&lt;script&gt;\n  export let data;  // Statue passes directory content here\n&lt;/script&gt;\n\u003C/code>\u003C/pre>\n\u003Cp>\u003Cstrong>Typical customization:\u003C/strong>\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-svelte\">&lt;script&gt;\n  import { DirectoryHeader, DirectoryContent } from &#39;statue-ssg&#39;;\n  export let data;\n\n  // Add search/filter functionality\n  let searchTerm = &#39;&#39;;\n  $: filtered = data.directoryContent.filter(post =&gt;\n    post.metadata.title.toLowerCase().includes(searchTerm.toLowerCase())\n  );\n&lt;/script&gt;\n\n&lt;DirectoryHeader title={data.currentDirectory.title} /&gt;\n\n&lt;!-- Add your customizations --&gt;\n&lt;input bind:value={searchTerm} placeholder=&quot;Search...&quot; /&gt;\n\n&lt;DirectoryContent content={filtered} /&gt;\n\u003C/code>\u003C/pre>\n\u003Cp>\u003Cstrong>Available in \u003Ccode>data\u003C/code>:\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ccode>currentDirectory\u003C/code> - Info about this directory\u003C/li>\n\u003Cli>\u003Ccode>directoryContent\u003C/code> - Array of content items\u003C/li>\n\u003Cli>\u003Ccode>subDirectories\u003C/code> - Subdirectories in this directory\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>Don&#39;t modify \u003Ccode>+page.server.js\u003C/code> files unless you know what you&#39;re doing\u003C/strong> - they contain the logic that loads markdown content.\u003C/p>\n\u003Chr>\n\u003Ch2>URL Structure\u003C/h2>\n\u003Ch3>Content → URL Mapping\u003C/h3>\n\u003Cpre>\u003Ccode>content/blog/hello.md               →  /blog/hello\ncontent/docs/guides/intro.md        →  /docs/guides/intro\ncontent/projects/2024/project.md    →  /projects/2024/project\n\u003C/code>\u003C/pre>\n\u003Cp>The folder structure becomes the URL structure.\u003C/p>\n\u003Ch3>Best Practices\u003C/h3>\n\u003Cp>\u003Cstrong>Use descriptive URLs:\u003C/strong>\u003C/p>\n\u003Cpre>\u003Ccode>✅ /blog/getting-started-with-statue\n❌ /blog/post1\n\u003C/code>\u003C/pre>\n\u003Cp>\u003Cstrong>Use hyphens, not underscores:\u003C/strong>\u003C/p>\n\u003Cpre>\u003Ccode>✅ my-blog-post.md\n❌ my_blog_post.md\n\u003C/code>\u003C/pre>\n\u003Cp>\u003Cstrong>Keep it simple:\u003C/strong>\u003C/p>\n\u003Cpre>\u003Ccode>✅ /docs/routing\n❌ /documentation/advanced-concepts/routing-system\n\u003C/code>\u003C/pre>\n\u003Chr>\n\u003Ch2>Creating Custom Routes\u003C/h2>\n\u003Cp>When creating custom pages for your Statue site, follow these patterns:\u003C/p>\n\u003Ch3>Required: Enable Prerendering\u003C/h3>\n\u003Cp>\u003Cstrong>In every \u003Ccode>+page.server.js\u003C/code>, you must include:\u003C/strong>\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-javascript\">export const prerender = true;\n\u003C/code>\u003C/pre>\n\u003Cp>\u003Cstrong>Why:\u003C/strong> Statue generates static sites. Without this, SvelteKit won&#39;t generate the HTML files at build time.\u003C/p>\n\u003Ch3>Typical Data Loading Pattern\u003C/h3>\n\u003Cp>\u003Cstrong>For custom pages that need data, use this pattern:\u003C/strong>\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-javascript\">// src/routes/pricing/+page.server.js\nexport const prerender = true;\n\nexport function load() {\n  // Load your data here\n  const plans = [\n    { name: &#39;Free&#39;, price: 0 },\n    { name: &#39;Pro&#39;, price: 29 }\n  ];\n\n  return { plans };\n}\n\u003C/code>\u003C/pre>\n\u003Cp>\u003Cstrong>Why:\u003C/strong> The \u003Ccode>load\u003C/code> function runs at build time and passes data to your page component.\u003C/p>\n\u003Ch3>Page Component\u003C/h3>\n\u003Cpre>\u003Ccode class=\"language-svelte\">&lt;!-- src/routes/pricing/+page.svelte --&gt;\n&lt;script&gt;\n  export let data;  // Data from +page.server.js\n&lt;/script&gt;\n\n&lt;h1&gt;Pricing&lt;/h1&gt;\n{#each data.plans as plan}\n  &lt;div&gt;{plan.name}: ${plan.price}/mo&lt;/div&gt;\n{/each}\n\u003C/code>\u003C/pre>\n\u003Cp>\u003Cstrong>Want to do something different?\u003C/strong> Check \u003Ca href=\"https://svelte.dev/docs/kit/routing\">SvelteKit&#39;s routing docs\u003C/a> for other patterns, but note that Statue requires static prerendering to work.\u003C/p>\n\u003Chr>\n\u003Ch2>Common Issues\u003C/h2>\n\u003Ch3>404 on existing markdown file\u003C/h3>\n\u003Cp>\u003Cstrong>Check:\u003C/strong>\u003C/p>\n\u003Col>\n\u003Cli>File is in \u003Ccode>content/\u003C/code> directory?\u003C/li>\n\u003Cli>Has \u003Ccode>.md\u003C/code> extension?\u003C/li>\n\u003Cli>Restarted dev server? (\u003Ccode>npm run dev\u003C/code>)\u003C/li>\n\u003C/ol>\n\u003Ch3>Custom route not working\u003C/h3>\n\u003Cp>See \u003Ca href=\"https://svelte.dev/docs/kit/routing\">SvelteKit routing docs\u003C/a> for route setup.\u003C/p>\n\u003Ch3>Changes not appearing\u003C/h3>\n\u003Cp>Clear SvelteKit cache:\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-bash\">rm -rf .svelte-kit build\nnpm run dev\n\u003C/code>\u003C/pre>\n\u003Chr>\n\u003Ch2>Learn More\u003C/h2>\n\u003Ch3>Statue Docs\u003C/h3>\n\u003Cul>\n\u003Cli>\u003Cstrong>\u003Ca href=\"https://statue.dev\">Statue.dev\u003C/a>\u003C/strong> - Official documentation\u003C/li>\n\u003Cli>\u003Cstrong>\u003Ca href=\"/docs/get-started\">Get Started\u003C/a>\u003C/strong> - Overview\u003C/li>\n\u003Cli>\u003Cstrong>\u003Ca href=\"/docs/site-config\">Site Config\u003C/a>\u003C/strong> - Configuration\u003C/li>\n\u003Cli>\u003Cstrong>\u003Ca href=\"/docs/components\">Components\u003C/a>\u003C/strong> - Build pages\u003C/li>\n\u003C/ul>\n\u003Ch3>SvelteKit Docs\u003C/h3>\n\u003Cul>\n\u003Cli>\u003Cstrong>\u003Ca href=\"https://svelte.dev/docs/kit/routing\">Routing\u003C/a>\u003C/strong> - File-based routing basics\u003C/li>\n\u003Cli>\u003Cstrong>\u003Ca href=\"https://svelte.dev/docs/kit/load\">Loading Data\u003C/a>\u003C/strong> - Server data loading\u003C/li>\n\u003Cli>\u003Cstrong>\u003Ca href=\"https://svelte.dev/docs/kit/advanced-routing\">Advanced Routing\u003C/a>\u003C/strong> - Layouts, groups, matchers\u003C/li>\n\u003C/ul>\n",metadata:{title:"Routing",description:"How Statue handles routing for markdown content",date:null,author:null,icon:"map"}},directories:[{name:"blog",path:"content/blog",title:"Blog",url:"/blog"},{name:"docs",path:"content/docs",title:"Docs",url:"/docs"},{name:"legal",path:"content/legal",title:"Legal",url:"/legal"}],sidebarItems:[{title:"Getting Started with Statue",url:"/docs/get-started",order:1},{title:"Components",url:"/docs/components",order:2},{title:"New Site Checklist",url:"/docs/new-site-checklist",order:999},{title:"Routing",url:"/docs/routing",order:999},{title:"Search",url:"/docs/search",order:999},{title:"Site Configuration",url:"/docs/site-config",order:999},{title:"Templates",url:"/docs/templates",order:999},{title:"Themes",url:"/docs/themes",order:999}]},uses:{params:["slug"]}}],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/SlidingTestimonial.nGruvXQ0.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/0.Ba7HRqfQ.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.B6WSCz-B.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ChHKPXre.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BN_7tDGw.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/B-AfhhPf.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.DOrWrzze.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DsnmJJEf.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/y19cvIXd.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C5m90Y_Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.DpU730sv.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Be-1K4tc.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CIB3XdOA.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CqlPqmze.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/N2sA-wAv.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BSrUNqIp.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/3.B56PAIOF.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Comz3Vm0.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/7ygnQesN.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D0ArBEsA.js"><!--hlt6rm--><!--[--><meta name="description" content="Configuring your Statue site with site.config.js"/><!--]--><!----><title>Site Configuration</title>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><nav class="bg-[var(--color-background)]  text-[var(--color-foreground)] fixed w-full top-0 z-50 transition-transform duration-300 will-change-transform translate-y-0" style="view-transition-name: navbar;"><div class="container mx-auto px-4"><div class="flex items-center justify-between h-16"><div class="flex items-center"><a href="/" class="flex items-center space-x-2"><!--[!--><!--[!--><!--]--><!--]--> <!--[--><span class="font-bold text-xl text-[var(--color-foreground)]">Statue SSG</span><!--]--></a></div> <div class="hidden md:flex items-center space-x-4"><!--[--><!--[--><a href="/" class="py-2 px-3 font-medium text-sm transition-colors duration-200 text-[var(--color-foreground)] hover:text-[var(--color-primary)]">Home</a><!--]--><!--[--><a href="/about" class="py-2 px-3 font-medium text-sm transition-colors duration-200 text-[var(--color-foreground)] hover:text-[var(--color-primary)]">About</a><!--]--><!--]--> <!--[--><!--[--><a href="/blog" class="py-2 px-3 font-medium text-sm transition-colors duration-200 text-[var(--color-foreground)] hover:text-[var(--color-primary)]">Blog</a><!--]--><!--[--><a href="/docs" class="py-2 px-3 font-medium text-sm transition-colors duration-200 text-[var(--color-primary)]">Docs</a><!--]--><!--]--> <!--[--><div class="ml-2 w-56"><div class="search-container relative  svelte-16knhue" role="search" aria-label="Site search"><div class="relative"><div class="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--color-muted)]"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></div> <input type="text" value="" placeholder="Search..." class="search-input w-full pl-10 pr-10 py-2 rounded-lg border border-[var(--color-border)] bg-[var(--color-background)] text-[var(--color-foreground)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition-all  svelte-16knhue" aria-label="Search input" aria-autocomplete="list" aria-controls="search-results"/> <!--[!--><!--]--> <!--[!--><!--]--></div> <!--[!--><!--]--> <!--[!--><!--]--></div><!----></div><!--]--> <!--[!--><!--]--></div> <div class="md:hidden"><button class="text-[var(--color-muted)] hover:text-[var(--color-primary)] focus:outline-none"><!--[!--><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg><!--]--></button></div></div></div> <!--[!--><!--]--></nav><!----> <main><!----><!--[!--><!--[--><!--[--><div class="docs-layout min-h-screen bg-[var(--color-background)] svelte-h5qt01"><button class="fixed bottom-4 right-4 z-50 lg:hidden flex items-center justify-center w-12 h-12 rounded-full bg-[var(--color-primary)] text-[var(--color-on-primary)] shadow-lg" aria-label="Toggle sidebar"><!--[!--><svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path></svg><!--]--></button> <!--[!--><!--]--> <div class="container mx-auto px-4 pt-16"><div class="flex"><div class="hidden lg:block w-64 flex-shrink-0"><div class="sticky top-16 h-[calc(100vh-4rem)] overflow-y-auto"><aside class="docs-sidebar w-64 flex-shrink-0 h-full overflow-y-auto bg-[var(--color-background)] svelte-4geowz"><nav class="pt-5 pb-4 pr-4"><ul class="space-y-1"><!--[--><li><!--[!--><!--[--><a href="/docs/get-started" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Getting Started with Statue</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/components" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Components</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/new-site-checklist" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">New Site Checklist</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/routing" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Routing</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/search" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Search</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/site-config" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors bg-[var(--color-primary)]/10 text-[var(--color-primary)]">Site Configuration</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/templates" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Templates</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/themes" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Themes</a><!--]--><!--]--></li><!--]--></ul></nav></aside><!----></div></div> <div class="fixed left-0 top-16 h-[calc(100vh-4rem)] w-64 z-50 transform transition-transform duration-300 lg:hidden bg-[var(--color-background)] -translate-x-full"><aside class="docs-sidebar w-64 flex-shrink-0 h-full overflow-y-auto bg-[var(--color-background)] svelte-4geowz"><nav class="pt-5 pb-4 pr-4"><ul class="space-y-1"><!--[--><li><!--[!--><!--[--><a href="/docs/get-started" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Getting Started with Statue</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/components" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Components</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/new-site-checklist" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">New Site Checklist</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/routing" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Routing</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/search" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Search</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/site-config" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors bg-[var(--color-primary)]/10 text-[var(--color-primary)]">Site Configuration</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/templates" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Templates</a><!--]--><!--]--></li><li><!--[!--><!--[--><a href="/docs/themes" class="block px-3 py-2 text-sm font-medium rounded-lg transition-colors text-[var(--color-foreground)] hover:bg-[var(--color-card)]">Themes</a><!--]--><!--]--></li><!--]--></ul></nav></aside><!----></div> <main class="flex-1 min-w-0 min-h-[calc(100vh-4rem)] relative"><div class="hidden lg:block absolute left-0 top-12 bottom-0 w-px bg-[var(--color-border)]"></div> <div class="px-4 sm:px-6 lg:px-8 py-8"><!--[--><!--[!--><!--]--> <article class="docs-content"><header class="mb-8 pb-8 border-b border-[var(--color-border)]"><!--[--><h1 class="text-3xl sm:text-4xl font-bold text-[var(--color-foreground)] mb-4">Site Configuration</h1><!--]--> <!--[--><p class="text-lg text-[var(--color-muted)] leading-relaxed">Configuring your Statue site with site.config.js</p><!--]--> <!--[!--><!--]--></header> <div class="prose prose-docs max-w-none pb-16"><!---->
+<p>The <code>site.config.js</code> file is your site&#39;s central configuration. It stores information used throughout your site via template variables and component props.</p>
+<blockquote>
+<p><strong>Contribute to Statue!</strong> Built a useful component, theme, or template? Share it with the community—it only takes a single command. <strong><a href="https://github.com/accretional/statue/blob/main/CONTRIBUTING.md">Learn how →</a></strong></p>
+</blockquote>
+<h2>Location</h2>
+<p><code>site.config.js</code> - in your project root</p>
+<h2>Basic Structure</h2>
+<pre><code class="language-javascript">export const siteConfig = {
+  site: { /* Site info */ },
+  contact: { /* Contact details */ },
+  social: { /* Social media */ },
+  legal: { /* Legal pages */ },
+  seo: { /* SEO settings */ }
+};
+
+export default siteConfig;
+</code></pre>
+<h2>Site Information</h2>
+<p>Basic information about your site:</p>
+<pre><code class="language-javascript">site: {
+  name: &quot;Your Site Name&quot;,
+  description: &quot;Your site description&quot;,
+  url: &quot;https://yoursite.com&quot;,
+  author: &quot;Your Name or Organization&quot;
+}
+</code></pre>
+<p><strong>Usage:</strong></p>
+<ul>
+<li><code>Statue SSG</code> in markdown</li>
+<li><code>{data.siteConfig.site.name}</code> in components</li>
+<li>SEO meta tags</li>
+</ul>
+<p><strong>When to update:</strong></p>
+<ul>
+<li>When you first set up your site</li>
+<li>When you rebrand</li>
+<li>When you change domains</li>
+</ul>
+<hr>
+<h2>Contact Information</h2>
+<h3>Basic Contact</h3>
+<pre><code class="language-javascript">contact: {
+  email: &quot;hello@yoursite.com&quot;,
+  privacyEmail: &quot;privacy@yoursite.com&quot;,
+  supportEmail: &quot;support@yoursite.com&quot;,
+  phone: &quot;+1 (555) 123-4567&quot;
+}
+</code></pre>
+<p><strong>Usage:</strong></p>
+<ul>
+<li><code>your-email@example.com</code> in markdown</li>
+<li>Legal pages (privacy policy, terms)</li>
+<li>Contact forms</li>
+<li>Footer</li>
+</ul>
+<p><strong>Tip:</strong> Use the same email for all if you don&#39;t have separate addresses.</p>
+<h3>Address</h3>
+<pre><code class="language-javascript">contact: {
+  address: {
+    street: &quot;123 Main Street&quot;,
+    city: &quot;San Francisco&quot;,
+    state: &quot;CA&quot;,
+    zipCode: &quot;94103&quot;,
+    country: &quot;United States&quot;
+  }
+}
+</code></pre>
+<p><strong>Usage:</strong></p>
+<ul>
+<li><code>123 Statue Street</code> - Individual fields</li>
+<li><code>123 Statue Street, San Francisco, CA 94103</code> - Auto-formatted full address</li>
+<li>Legal pages (business address requirements)</li>
+<li>Contact page</li>
+</ul>
+<p><strong>Tip:</strong> Required for some legal pages and business sites.</p>
+<hr>
+<h2>Social Media</h2>
+<p>Links to your social media profiles:</p>
+<pre><code class="language-javascript">social: {
+  twitter: &quot;https://twitter.com/yourhandle&quot;,
+  github: &quot;https://github.com/yourorg&quot;,
+  linkedin: &quot;https://linkedin.com/company/yourcompany&quot;,
+  facebook: &quot;https://facebook.com/yourpage&quot;,
+  instagram: &quot;https://instagram.com/yourhandle&quot;,
+  youtube: &quot;https://youtube.com/@yourchannel&quot;,
+  discord: &quot;https://discord.gg/yourserver&quot;,
+  reddit: &quot;https://reddit.com/r/yourcommunity&quot;
+}
+</code></pre>
+<p><strong>Usage:</strong></p>
+<ul>
+<li><code>https://twitter.com/statuessg</code> in markdown</li>
+<li>Footer social links</li>
+<li>Share buttons</li>
+</ul>
+<p><strong>Tip:</strong> Remove or leave empty the ones you don&#39;t use.</p>
+<hr>
+<h2>Legal Settings</h2>
+<p>Configuration for legal pages:</p>
+<pre><code class="language-javascript">legal: {
+  privacyPolicyLastUpdated: &quot;2025-01-15&quot;,
+  termsLastUpdated: &quot;2025-01-15&quot;,
+  isCaliforniaCompliant: true,
+  doNotSell: {
+    processingTime: &quot;15 business days&quot;,
+    confirmationRequired: true
+  }
+}
+</code></pre>
+<p><strong>Usage:</strong></p>
+<ul>
+<li><code>2024-01-15</code> - Shows update date</li>
+<li>Privacy policy requirements</li>
+<li>CCPA/CPRA compliance</li>
+</ul>
+<p><strong>When to update:</strong></p>
+<ul>
+<li>When you modify your privacy policy</li>
+<li>When you modify your terms of service</li>
+<li>When you update data handling practices</li>
+</ul>
+<p><strong>Important:</strong> Keep dates accurate for legal compliance.</p>
+<hr>
+<h2>SEO Settings</h2>
+<p>Search engine optimization configuration:</p>
+<pre><code class="language-javascript">seo: {
+  defaultTitle: &quot;Your Site - Tagline&quot;,
+  titleTemplate: &quot;%s | Your Site&quot;,
+  defaultDescription: &quot;Your site description for search results&quot;,
+  keywords: [&quot;your&quot;, &quot;site&quot;, &quot;keywords&quot;],
+  ogImage: &quot;/images/og-image.png&quot;,
+  twitterCard: &quot;summary_large_image&quot;
+}
+</code></pre>
+<h3>SEO Fields</h3>
+<p><strong><code>defaultTitle</code></strong></p>
+<ul>
+<li>Fallback title when no title is specified</li>
+<li>Used on homepage if no custom title set</li>
+</ul>
+<p><strong><code>titleTemplate</code></strong></p>
+<ul>
+<li>Template for page titles</li>
+<li><code>%s</code> is replaced with the page title</li>
+<li>Example: &quot;Blog Post | Your Site&quot;</li>
+</ul>
+<p><strong><code>defaultDescription</code></strong></p>
+<ul>
+<li>Fallback meta description</li>
+<li>Used when pages don&#39;t specify description</li>
+<li>Shows in search results</li>
+</ul>
+<p><strong><code>keywords</code></strong></p>
+<ul>
+<li>Array of site-wide keywords</li>
+<li>Less important for modern SEO but still useful</li>
+</ul>
+<p><strong><code>ogImage</code></strong></p>
+<ul>
+<li>Image URL for social sharing (Open Graph)</li>
+<li>Shows when links are shared on social media</li>
+<li>Should be 1200×630px</li>
+</ul>
+<p><strong><code>twitterCard</code></strong></p>
+<ul>
+<li>Twitter card type</li>
+<li>Options: <code>summary</code>, <code>summary_large_image</code>, <code>player</code></li>
+</ul>
+<hr>
+<h2>Using Configuration in Markdown</h2>
+<h3>Template Variables</h3>
+<p>Statue lets you use config values and dynamic variables in your markdown using the <code>{{variable}}</code> syntax.</p>
+<h4>Basic Usage</h4>
+<p>Access config values in any markdown file:</p>
+<pre><code class="language-markdown">---
+title: Contact Us
+description: Get in touch with Statue SSG
+---
+
+# Contact Us
+
+Email: [your-email@example.com](mailto:your-email@example.com)
+Phone: +1 (555) 123-4567
+
+Our office: 123 Statue Street, San Francisco, CA 94103
+
+Follow us on [Twitter](https://twitter.com/statuessg)
+
+© 2026 Statue SSG
+</code></pre>
+<h4>Available Variables</h4>
+<p><strong>Site Information:</strong></p>
+<ul>
+<li><code>Statue SSG</code> - Site name</li>
+<li><code>A simple static site generator for markdown content with SvelteKit</code> - Site description</li>
+<li><code>https://statuessg.com</code> - Site URL</li>
+<li><code>Statue Team</code> - Site author</li>
+</ul>
+<p><strong>Contact Information:</strong></p>
+<ul>
+<li><code>your-email@example.com</code> - Main email</li>
+<li><code>your-privacy@example.com</code> - Privacy email</li>
+<li><code>your-support@example.com</code> - Support email</li>
+<li><code>+1 (555) 123-4567</code> - Phone number</li>
+<li><code>123 Statue Street</code> - Street address</li>
+<li><code>San Francisco</code> - City</li>
+<li><code>CA</code> - State</li>
+<li><code>94103</code> - ZIP code</li>
+<li><code>United States</code> - Country</li>
+<li><code>123 Statue Street, San Francisco, CA 94103</code> - Full formatted address</li>
+</ul>
+<p><strong>Social Media:</strong></p>
+<ul>
+<li><code>https://twitter.com/statuessg</code> - Twitter URL</li>
+<li><code>https://github.com/accretional/statue</code> - GitHub URL</li>
+<li><code>https://linkedin.com/company/statuessg</code> - LinkedIn URL</li>
+<li><code>https://facebook.com/statuessg</code> - Facebook URL</li>
+<li><code>https://instagram.com/statuessg</code> - Instagram URL</li>
+<li><code>https://youtube.com/@statuessg</code> - YouTube URL</li>
+<li><code>undefined</code> - Discord URL</li>
+<li><code>undefined</code> - Reddit URL</li>
+</ul>
+<p><strong>Legal:</strong></p>
+<ul>
+<li><code>2024-01-15</code> - Privacy policy date</li>
+<li><code>2024-01-15</code> - Terms of service date</li>
+<li><code>15 business days</code> - Processing time</li>
+</ul>
+<p><strong>Date Variables:</strong></p>
+<ul>
+<li><code>2/11/2026</code> - Today&#39;s date (e.g., &quot;12/7/2025&quot;)</li>
+<li><code>2026</code> - Current year (e.g., &quot;2025&quot;)</li>
+<li><code>February</code> - Current month name (e.g., &quot;December&quot;)</li>
+<li><code>11</code> - Current day (e.g., &quot;7&quot;)</li>
+</ul>
+<h4>Using in Frontmatter</h4>
+<p>Variables work in frontmatter too:</p>
+<pre><code class="language-markdown">---
+title: Privacy Policy for Statue SSG
+description: Statue SSG&#39;s privacy policy, last updated 2024-01-15
+---
+</code></pre>
+<h4>Template Variable Examples</h4>
+<p><strong>Email links:</strong></p>
+<pre><code class="language-markdown">Contact us: [your-email@example.com](mailto:your-email@example.com)
+Privacy: [your-privacy@example.com](mailto:your-privacy@example.com)
+</code></pre>
+<p><strong>Social media:</strong></p>
+<pre><code class="language-markdown">Follow us:
+- [Twitter](https://twitter.com/statuessg)
+- [GitHub](https://github.com/accretional/statue)
+- [Discord](undefined)
+</code></pre>
+<p><strong>Copyright notices:</strong></p>
+<pre><code class="language-markdown">© 2026 Statue SSG. All rights reserved.
+</code></pre>
+<p><strong>Dynamic dates:</strong></p>
+<pre><code class="language-markdown">Last updated: 2/11/2026
+</code></pre>
+<h4>How Variables Work</h4>
+<ul>
+<li>Variables are processed at <strong>build time</strong>, not runtime</li>
+<li>If a variable isn&#39;t found, the <code>{{variable}}</code> text stays unchanged</li>
+<li>A warning is logged to console for missing variables</li>
+<li>Variables are safe - no user input is evaluated</li>
+</ul>
+<hr>
+<h2>Using Configuration in Components</h2>
+<p>Access config in Svelte components:</p>
+<pre><code class="language-svelte">&lt;script&gt;
+  import siteConfig from &#39;/site.config.js&#39;;
+
+  const siteName = siteConfig.site.name;
+  const email = siteConfig.contact.email;
+&lt;/script&gt;
+
+&lt;h1&gt;Welcome to {siteName}&lt;/h1&gt;
+&lt;a href=&quot;mailto:{email}&quot;&gt;Contact us&lt;/a&gt;
+</code></pre>
+<hr>
+<h2>Environment-Specific Configuration</h2>
+<h3>Dynamic URL Configuration</h3>
+<p>Handle different URLs for development and production:</p>
+<pre><code class="language-javascript">let siteUrl;
+
+if (typeof import.meta !== &#39;undefined&#39; &amp;&amp; import.meta.env) {
+  siteUrl = import.meta.env.VITE_SITEURL;
+} else {
+  siteUrl = process.env.VITE_SITEURL;
+}
+
+siteUrl = siteUrl ?? &#39;https://yoursite.com&#39;; // Fallback
+
+export const siteConfig = {
+  site: {
+    url: siteUrl,
+    // ... other config
+  }
+};
+</code></pre>
+<p>Set via environment variable:</p>
+<pre><code class="language-bash">VITE_SITEURL=https://staging.yoursite.com npm run dev
+</code></pre>
+<hr>
+<h2>Configuration Best Practices</h2>
+<h3>1. Update Immediately</h3>
+<p>Change placeholder values when you first set up:</p>
+<pre><code class="language-javascript">email: &quot;your-email@example.com&quot;  // ❌ Don&#39;t leave this
+email: &quot;hello@yoursite.com&quot;      // ✅ Change to your email
+</code></pre>
+<h3>2. Keep Legal Dates Current</h3>
+<pre><code class="language-javascript">privacyPolicyLastUpdated: &quot;2025-01-15&quot;  // Update when you change policy
+</code></pre>
+<h3>3. Remove Unused Socials</h3>
+<pre><code class="language-javascript">// ❌ Don&#39;t leave fake links
+facebook: &quot;https://facebook.com/statuessg&quot;
+
+// ✅ Remove or use your actual link
+facebook: &quot;https://facebook.com/yourpage&quot;
+// Or remove the line entirely
+</code></pre>
+<h3>4. Use Consistent Formatting</h3>
+<pre><code class="language-javascript">// ✅ Good - consistent URL formats
+twitter: &quot;https://twitter.com/handle&quot;
+github: &quot;https://github.com/user&quot;
+
+// ❌ Bad - inconsistent
+twitter: &quot;twitter.com/handle&quot;  // Missing protocol
+github: &quot;https://github.com/user&quot;
+</code></pre>
+<h3>5. Validate Email Addresses</h3>
+<p>Ensure emails are valid:</p>
+<pre><code class="language-javascript">email: &quot;hello@yoursite.com&quot;      // ✅ Valid
+email: &quot;hello @ yoursite.com&quot;    // ❌ Invalid (spaces)
+email: &quot;hello&quot;                    // ❌ Invalid (no domain)
+</code></pre>
+<hr>
+<h2>Common Configuration Patterns</h2>
+<h3>Startup/SaaS Site</h3>
+<pre><code class="language-javascript">export const siteConfig = {
+  site: {
+    name: &quot;YourApp&quot;,
+    description: &quot;The best app for X&quot;,
+    url: &quot;https://yourapp.com&quot;,
+    author: &quot;YourApp Team&quot;
+  },
+  contact: {
+    email: &quot;hello@yourapp.com&quot;,
+    supportEmail: &quot;support@yourapp.com&quot;
+  },
+  social: {
+    twitter: &quot;https://twitter.com/yourapp&quot;,
+    github: &quot;https://github.com/yourorg&quot;
+  }
+};
+</code></pre>
+<h3>Personal Blog</h3>
+<pre><code class="language-javascript">export const siteConfig = {
+  site: {
+    name: &quot;John&#39;s Blog&quot;,
+    description: &quot;Thoughts on code and life&quot;,
+    url: &quot;https://johnblog.com&quot;,
+    author: &quot;John Doe&quot;
+  },
+  contact: {
+    email: &quot;john@johnblog.com&quot;
+  },
+  social: {
+    twitter: &quot;https://twitter.com/johndoe&quot;,
+    github: &quot;https://github.com/johndoe&quot;
+  }
+};
+</code></pre>
+<h3>Documentation Site</h3>
+<pre><code class="language-javascript">export const siteConfig = {
+  site: {
+    name: &quot;ProjectDocs&quot;,
+    description: &quot;Official documentation for Project&quot;,
+    url: &quot;https://docs.project.com&quot;,
+    author: &quot;Project Team&quot;
+  },
+  contact: {
+    email: &quot;docs@project.com&quot;
+  },
+  social: {
+    github: &quot;https://github.com/project/project&quot;,
+    discord: &quot;https://discord.gg/project&quot;
+  }
+};
+</code></pre>
+<hr>
+<h2>Troubleshooting</h2>
+<h3>Variables not showing in markdown</h3>
+<p><strong>Check:</strong></p>
+<ol>
+<li>Is the variable name correct?</li>
+<li>Did you restart the dev server?</li>
+<li>Is the value defined in <code>site.config.js</code>?</li>
+</ol>
+<p><strong>Fix:</strong></p>
+<pre><code class="language-bash"># Restart dev server
+npm run dev
+</code></pre>
+<h3>Config changes not applying</h3>
+<p><strong>Build cache issue.</strong> Clear build artifacts:</p>
+<pre><code class="language-bash">rm -rf .svelte-kit build
+npm run dev
+</code></pre>
+<h3>TypeScript errors with config</h3>
+<p>Create a type definition file (optional):</p>
+<pre><code class="language-typescript">// site.config.d.ts
+export interface SiteConfig {
+  site: {
+    name: string;
+    description: string;
+    url: string;
+    author: string;
+  };
+  // ... other types
+}
+</code></pre>
+<hr>
+<h2>Next Steps</h2>
+<ul>
+<li><strong><a href="https://statue.dev">Statue.dev</a></strong> - Official documentation</li>
+<li><strong><a href="/docs/new-site-checklist">New Site Checklist</a></strong> - Setup walkthrough</li>
+<li><strong><a href="/docs/components">Components</a></strong> - Use config in components</li>
+<li><strong><a href="/docs/themes">Themes</a></strong> - Style your site</li>
+</ul>
+<!----></div></article><!----><!--]--></div></main> <!--[--><div class="hidden xl:block w-64 flex-shrink-0"><div class="sticky top-16 pt-5 px-6"><!--[!--><!--]--><!----></div></div><!--]--></div></div></div><!--]--><!--]--><!--]--><!----><!----></main> <footer class="bg-[var(--color-card)] text-[var(--color-muted)] py-10 border-t border-[var(--color-border)]"><div class="container mx-auto px-4"><div class="sitemap mt-6 pt-4 mb-8"><div class="sitemap-grid grid grid-cols-2 md:grid-cols-3 gap-4 svelte-xmj80j"><div class="sitemap-category svelte-xmj80j"><h4 class="text-lg font-medium mb-2 text-[var(--color-foreground)]">Main Pages</h4> <ul class="ml-2 space-y-1"><li><a href="/" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Home Page</a></li> <!--[--><!--[--><!--[--><li><a href="/blog" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Blog</a></li><!--]--><!--[--><li><a href="/docs" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Docs</a></li><!--]--><!--[!--><!--]--><!--]--><!--]--></ul></div> <!--[--><!--[--><!--[--><div class="sitemap-category svelte-xmj80j"><h4 class="text-lg font-medium mb-2 text-[var(--color-foreground)]"><a href="/blog" class="text-[var(--color-foreground)] hover:text-[var(--color-primary)]">Blog</a></h4> <!--[--><ul class="ml-2 space-y-1"><!--[--><li><a href="/blog/drag-drop-publish" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Drag, Drop, Done</a></li><!--]--></ul><!--]--></div><!--]--><!--[--><div class="sitemap-category svelte-xmj80j"><h4 class="text-lg font-medium mb-2 text-[var(--color-foreground)]"><a href="/docs" class="text-[var(--color-primary)] hover:text-[var(--color-primary)]">Docs</a></h4> <!--[--><ul class="ml-2 space-y-1"><!--[--><li><a href="/docs/components" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Components</a></li><li><a href="/docs/get-started" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Getting Started with Statue</a></li><li><a href="/docs/new-site-checklist" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">New Site Checklist</a></li><li><a href="/docs/routing" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Routing</a></li><li><a href="/docs/search" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Search</a></li><li><a href="/docs/site-config" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Site Configuration</a></li><li><a href="/docs/templates" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Templates</a></li><li><a href="/docs/themes" class="text-[var(--color-muted)] hover:text-[var(--color-primary)] text-sm">Themes</a></li><!--]--></ul><!--]--></div><!--]--><!--[!--><!--]--><!--]--><!--]--></div></div> <div class="text-center"><p>© 2026 Statue SSG. Static site generator developed with SvelteKit.</p> <div class="mt-4 flex justify-center space-x-6"><!--[--><a href="/legal/privacy-policy" class="text-[var(--color-muted)] hover:text-[var(--color-primary)]">Privacy Policy</a><a href="/legal/do-not-sell" class="text-[var(--color-muted)] hover:text-[var(--color-primary)]">Do Not Sell My Information</a><a href="/legal/terms" class="text-[var(--color-muted)] hover:text-[var(--color-primary)]">Terms of Use</a><!--]--></div> <div class="mt-6 flex justify-center space-x-8"><!--[--><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-[var(--color-muted)] hover:text-[var(--color-primary)]" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></a><a href="https://x.com" target="_blank" rel="noopener noreferrer" class="text-[var(--color-muted)] hover:text-[var(--color-primary)]" aria-label="X (Twitter)"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"></path></svg></a><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-[var(--color-muted)] hover:text-[var(--color-primary)]" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-[var(--color-muted)] hover:text-[var(--color-primary)]" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a><!--]--></div></div></div></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1jei726 = {
+						base: new URL("../..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.B6WSCz-B.js"),
+						import("../../_app/immutable/entry/app.DOrWrzze.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data: [{type:"data",data:{globalDirectories:[{name:"blog",path:"content/blog",title:"Blog",url:"/blog",subpages:[{title:"Drag, Drop, Done",url:"/blog/drag-drop-publish"}]},{name:"docs",path:"content/docs",title:"Docs",url:"/docs",subpages:[{title:"Components",url:"/docs/components"},{title:"Getting Started with Statue",url:"/docs/get-started"},{title:"New Site Checklist",url:"/docs/new-site-checklist"},{title:"Routing",url:"/docs/routing"},{title:"Search",url:"/docs/search"},{title:"Site Configuration",url:"/docs/site-config"},{title:"Templates",url:"/docs/templates"},{title:"Themes",url:"/docs/themes"}]},{name:"legal",path:"content/legal",title:"Legal",url:"/legal",subpages:[{title:"Do Not Sell or Share My Personal Information",url:"/legal/do-not-sell"},{title:"Privacy Policy",url:"/legal/privacy-policy"},{title:"Terms of Use",url:"/legal/terms"}]}],searchConfig:{enabled:true,placeholder:"Search...",noResultsText:"No results found",debounceMs:300,minQueryLength:2,maxResults:10,showCategories:true,showDates:true,showExcerpts:true,excerptLength:30},navbarConfig:{siteTitle:"Statue SSG",logo:null,defaultNavItems:[{title:"Home",url:"/"},{title:"About",url:"/about"}],hiddenFromNav:["legal"]}},uses:{}},{type:"data",data:{content:{slug:"site-config",path:"docs/site-config.md",url:"/docs/site-config",directory:"docs",mainDirectory:"docs",depth:1,content:"\n\u003Cp>The \u003Ccode>site.config.js\u003C/code> file is your site&#39;s central configuration. It stores information used throughout your site via template variables and component props.\u003C/p>\n\u003Cblockquote>\n\u003Cp>\u003Cstrong>Contribute to Statue!\u003C/strong> Built a useful component, theme, or template? Share it with the community—it only takes a single command. \u003Cstrong>\u003Ca href=\"https://github.com/accretional/statue/blob/main/CONTRIBUTING.md\">Learn how →\u003C/a>\u003C/strong>\u003C/p>\n\u003C/blockquote>\n\u003Ch2>Location\u003C/h2>\n\u003Cp>\u003Ccode>site.config.js\u003C/code> - in your project root\u003C/p>\n\u003Ch2>Basic Structure\u003C/h2>\n\u003Cpre>\u003Ccode class=\"language-javascript\">export const siteConfig = {\n  site: { /* Site info */ },\n  contact: { /* Contact details */ },\n  social: { /* Social media */ },\n  legal: { /* Legal pages */ },\n  seo: { /* SEO settings */ }\n};\n\nexport default siteConfig;\n\u003C/code>\u003C/pre>\n\u003Ch2>Site Information\u003C/h2>\n\u003Cp>Basic information about your site:\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-javascript\">site: {\n  name: &quot;Your Site Name&quot;,\n  description: &quot;Your site description&quot;,\n  url: &quot;https://yoursite.com&quot;,\n  author: &quot;Your Name or Organization&quot;\n}\n\u003C/code>\u003C/pre>\n\u003Cp>\u003Cstrong>Usage:\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ccode>Statue SSG\u003C/code> in markdown\u003C/li>\n\u003Cli>\u003Ccode>{data.siteConfig.site.name}\u003C/code> in components\u003C/li>\n\u003Cli>SEO meta tags\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>When to update:\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>When you first set up your site\u003C/li>\n\u003Cli>When you rebrand\u003C/li>\n\u003Cli>When you change domains\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch2>Contact Information\u003C/h2>\n\u003Ch3>Basic Contact\u003C/h3>\n\u003Cpre>\u003Ccode class=\"language-javascript\">contact: {\n  email: &quot;hello@yoursite.com&quot;,\n  privacyEmail: &quot;privacy@yoursite.com&quot;,\n  supportEmail: &quot;support@yoursite.com&quot;,\n  phone: &quot;+1 (555) 123-4567&quot;\n}\n\u003C/code>\u003C/pre>\n\u003Cp>\u003Cstrong>Usage:\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ccode>your-email@example.com\u003C/code> in markdown\u003C/li>\n\u003Cli>Legal pages (privacy policy, terms)\u003C/li>\n\u003Cli>Contact forms\u003C/li>\n\u003Cli>Footer\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>Tip:\u003C/strong> Use the same email for all if you don&#39;t have separate addresses.\u003C/p>\n\u003Ch3>Address\u003C/h3>\n\u003Cpre>\u003Ccode class=\"language-javascript\">contact: {\n  address: {\n    street: &quot;123 Main Street&quot;,\n    city: &quot;San Francisco&quot;,\n    state: &quot;CA&quot;,\n    zipCode: &quot;94103&quot;,\n    country: &quot;United States&quot;\n  }\n}\n\u003C/code>\u003C/pre>\n\u003Cp>\u003Cstrong>Usage:\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ccode>123 Statue Street\u003C/code> - Individual fields\u003C/li>\n\u003Cli>\u003Ccode>123 Statue Street, San Francisco, CA 94103\u003C/code> - Auto-formatted full address\u003C/li>\n\u003Cli>Legal pages (business address requirements)\u003C/li>\n\u003Cli>Contact page\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>Tip:\u003C/strong> Required for some legal pages and business sites.\u003C/p>\n\u003Chr>\n\u003Ch2>Social Media\u003C/h2>\n\u003Cp>Links to your social media profiles:\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-javascript\">social: {\n  twitter: &quot;https://twitter.com/yourhandle&quot;,\n  github: &quot;https://github.com/yourorg&quot;,\n  linkedin: &quot;https://linkedin.com/company/yourcompany&quot;,\n  facebook: &quot;https://facebook.com/yourpage&quot;,\n  instagram: &quot;https://instagram.com/yourhandle&quot;,\n  youtube: &quot;https://youtube.com/@yourchannel&quot;,\n  discord: &quot;https://discord.gg/yourserver&quot;,\n  reddit: &quot;https://reddit.com/r/yourcommunity&quot;\n}\n\u003C/code>\u003C/pre>\n\u003Cp>\u003Cstrong>Usage:\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ccode>https://twitter.com/statuessg\u003C/code> in markdown\u003C/li>\n\u003Cli>Footer social links\u003C/li>\n\u003Cli>Share buttons\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>Tip:\u003C/strong> Remove or leave empty the ones you don&#39;t use.\u003C/p>\n\u003Chr>\n\u003Ch2>Legal Settings\u003C/h2>\n\u003Cp>Configuration for legal pages:\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-javascript\">legal: {\n  privacyPolicyLastUpdated: &quot;2025-01-15&quot;,\n  termsLastUpdated: &quot;2025-01-15&quot;,\n  isCaliforniaCompliant: true,\n  doNotSell: {\n    processingTime: &quot;15 business days&quot;,\n    confirmationRequired: true\n  }\n}\n\u003C/code>\u003C/pre>\n\u003Cp>\u003Cstrong>Usage:\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ccode>2024-01-15\u003C/code> - Shows update date\u003C/li>\n\u003Cli>Privacy policy requirements\u003C/li>\n\u003Cli>CCPA/CPRA compliance\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>When to update:\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>When you modify your privacy policy\u003C/li>\n\u003Cli>When you modify your terms of service\u003C/li>\n\u003Cli>When you update data handling practices\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>Important:\u003C/strong> Keep dates accurate for legal compliance.\u003C/p>\n\u003Chr>\n\u003Ch2>SEO Settings\u003C/h2>\n\u003Cp>Search engine optimization configuration:\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-javascript\">seo: {\n  defaultTitle: &quot;Your Site - Tagline&quot;,\n  titleTemplate: &quot;%s | Your Site&quot;,\n  defaultDescription: &quot;Your site description for search results&quot;,\n  keywords: [&quot;your&quot;, &quot;site&quot;, &quot;keywords&quot;],\n  ogImage: &quot;/images/og-image.png&quot;,\n  twitterCard: &quot;summary_large_image&quot;\n}\n\u003C/code>\u003C/pre>\n\u003Ch3>SEO Fields\u003C/h3>\n\u003Cp>\u003Cstrong>\u003Ccode>defaultTitle\u003C/code>\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>Fallback title when no title is specified\u003C/li>\n\u003Cli>Used on homepage if no custom title set\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>\u003Ccode>titleTemplate\u003C/code>\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>Template for page titles\u003C/li>\n\u003Cli>\u003Ccode>%s\u003C/code> is replaced with the page title\u003C/li>\n\u003Cli>Example: &quot;Blog Post | Your Site&quot;\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>\u003Ccode>defaultDescription\u003C/code>\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>Fallback meta description\u003C/li>\n\u003Cli>Used when pages don&#39;t specify description\u003C/li>\n\u003Cli>Shows in search results\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>\u003Ccode>keywords\u003C/code>\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>Array of site-wide keywords\u003C/li>\n\u003Cli>Less important for modern SEO but still useful\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>\u003Ccode>ogImage\u003C/code>\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>Image URL for social sharing (Open Graph)\u003C/li>\n\u003Cli>Shows when links are shared on social media\u003C/li>\n\u003Cli>Should be 1200×630px\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>\u003Ccode>twitterCard\u003C/code>\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>Twitter card type\u003C/li>\n\u003Cli>Options: \u003Ccode>summary\u003C/code>, \u003Ccode>summary_large_image\u003C/code>, \u003Ccode>player\u003C/code>\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch2>Using Configuration in Markdown\u003C/h2>\n\u003Ch3>Template Variables\u003C/h3>\n\u003Cp>Statue lets you use config values and dynamic variables in your markdown using the \u003Ccode>{{variable}}\u003C/code> syntax.\u003C/p>\n\u003Ch4>Basic Usage\u003C/h4>\n\u003Cp>Access config values in any markdown file:\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-markdown\">---\ntitle: Contact Us\ndescription: Get in touch with Statue SSG\n---\n\n# Contact Us\n\nEmail: [your-email@example.com](mailto:your-email@example.com)\nPhone: +1 (555) 123-4567\n\nOur office: 123 Statue Street, San Francisco, CA 94103\n\nFollow us on [Twitter](https://twitter.com/statuessg)\n\n© 2026 Statue SSG\n\u003C/code>\u003C/pre>\n\u003Ch4>Available Variables\u003C/h4>\n\u003Cp>\u003Cstrong>Site Information:\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ccode>Statue SSG\u003C/code> - Site name\u003C/li>\n\u003Cli>\u003Ccode>A simple static site generator for markdown content with SvelteKit\u003C/code> - Site description\u003C/li>\n\u003Cli>\u003Ccode>https://statuessg.com\u003C/code> - Site URL\u003C/li>\n\u003Cli>\u003Ccode>Statue Team\u003C/code> - Site author\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>Contact Information:\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ccode>your-email@example.com\u003C/code> - Main email\u003C/li>\n\u003Cli>\u003Ccode>your-privacy@example.com\u003C/code> - Privacy email\u003C/li>\n\u003Cli>\u003Ccode>your-support@example.com\u003C/code> - Support email\u003C/li>\n\u003Cli>\u003Ccode>+1 (555) 123-4567\u003C/code> - Phone number\u003C/li>\n\u003Cli>\u003Ccode>123 Statue Street\u003C/code> - Street address\u003C/li>\n\u003Cli>\u003Ccode>San Francisco\u003C/code> - City\u003C/li>\n\u003Cli>\u003Ccode>CA\u003C/code> - State\u003C/li>\n\u003Cli>\u003Ccode>94103\u003C/code> - ZIP code\u003C/li>\n\u003Cli>\u003Ccode>United States\u003C/code> - Country\u003C/li>\n\u003Cli>\u003Ccode>123 Statue Street, San Francisco, CA 94103\u003C/code> - Full formatted address\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>Social Media:\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ccode>https://twitter.com/statuessg\u003C/code> - Twitter URL\u003C/li>\n\u003Cli>\u003Ccode>https://github.com/accretional/statue\u003C/code> - GitHub URL\u003C/li>\n\u003Cli>\u003Ccode>https://linkedin.com/company/statuessg\u003C/code> - LinkedIn URL\u003C/li>\n\u003Cli>\u003Ccode>https://facebook.com/statuessg\u003C/code> - Facebook URL\u003C/li>\n\u003Cli>\u003Ccode>https://instagram.com/statuessg\u003C/code> - Instagram URL\u003C/li>\n\u003Cli>\u003Ccode>https://youtube.com/@statuessg\u003C/code> - YouTube URL\u003C/li>\n\u003Cli>\u003Ccode>undefined\u003C/code> - Discord URL\u003C/li>\n\u003Cli>\u003Ccode>undefined\u003C/code> - Reddit URL\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>Legal:\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ccode>2024-01-15\u003C/code> - Privacy policy date\u003C/li>\n\u003Cli>\u003Ccode>2024-01-15\u003C/code> - Terms of service date\u003C/li>\n\u003Cli>\u003Ccode>15 business days\u003C/code> - Processing time\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>Date Variables:\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>\u003Ccode>2/11/2026\u003C/code> - Today&#39;s date (e.g., &quot;12/7/2025&quot;)\u003C/li>\n\u003Cli>\u003Ccode>2026\u003C/code> - Current year (e.g., &quot;2025&quot;)\u003C/li>\n\u003Cli>\u003Ccode>February\u003C/code> - Current month name (e.g., &quot;December&quot;)\u003C/li>\n\u003Cli>\u003Ccode>11\u003C/code> - Current day (e.g., &quot;7&quot;)\u003C/li>\n\u003C/ul>\n\u003Ch4>Using in Frontmatter\u003C/h4>\n\u003Cp>Variables work in frontmatter too:\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-markdown\">---\ntitle: Privacy Policy for Statue SSG\ndescription: Statue SSG&#39;s privacy policy, last updated 2024-01-15\n---\n\u003C/code>\u003C/pre>\n\u003Ch4>Template Variable Examples\u003C/h4>\n\u003Cp>\u003Cstrong>Email links:\u003C/strong>\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-markdown\">Contact us: [your-email@example.com](mailto:your-email@example.com)\nPrivacy: [your-privacy@example.com](mailto:your-privacy@example.com)\n\u003C/code>\u003C/pre>\n\u003Cp>\u003Cstrong>Social media:\u003C/strong>\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-markdown\">Follow us:\n- [Twitter](https://twitter.com/statuessg)\n- [GitHub](https://github.com/accretional/statue)\n- [Discord](undefined)\n\u003C/code>\u003C/pre>\n\u003Cp>\u003Cstrong>Copyright notices:\u003C/strong>\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-markdown\">© 2026 Statue SSG. All rights reserved.\n\u003C/code>\u003C/pre>\n\u003Cp>\u003Cstrong>Dynamic dates:\u003C/strong>\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-markdown\">Last updated: 2/11/2026\n\u003C/code>\u003C/pre>\n\u003Ch4>How Variables Work\u003C/h4>\n\u003Cul>\n\u003Cli>Variables are processed at \u003Cstrong>build time\u003C/strong>, not runtime\u003C/li>\n\u003Cli>If a variable isn&#39;t found, the \u003Ccode>{{variable}}\u003C/code> text stays unchanged\u003C/li>\n\u003Cli>A warning is logged to console for missing variables\u003C/li>\n\u003Cli>Variables are safe - no user input is evaluated\u003C/li>\n\u003C/ul>\n\u003Chr>\n\u003Ch2>Using Configuration in Components\u003C/h2>\n\u003Cp>Access config in Svelte components:\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-svelte\">&lt;script&gt;\n  import siteConfig from &#39;/site.config.js&#39;;\n\n  const siteName = siteConfig.site.name;\n  const email = siteConfig.contact.email;\n&lt;/script&gt;\n\n&lt;h1&gt;Welcome to {siteName}&lt;/h1&gt;\n&lt;a href=&quot;mailto:{email}&quot;&gt;Contact us&lt;/a&gt;\n\u003C/code>\u003C/pre>\n\u003Chr>\n\u003Ch2>Environment-Specific Configuration\u003C/h2>\n\u003Ch3>Dynamic URL Configuration\u003C/h3>\n\u003Cp>Handle different URLs for development and production:\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-javascript\">let siteUrl;\n\nif (typeof import.meta !== &#39;undefined&#39; &amp;&amp; import.meta.env) {\n  siteUrl = import.meta.env.VITE_SITEURL;\n} else {\n  siteUrl = process.env.VITE_SITEURL;\n}\n\nsiteUrl = siteUrl ?? &#39;https://yoursite.com&#39;; // Fallback\n\nexport const siteConfig = {\n  site: {\n    url: siteUrl,\n    // ... other config\n  }\n};\n\u003C/code>\u003C/pre>\n\u003Cp>Set via environment variable:\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-bash\">VITE_SITEURL=https://staging.yoursite.com npm run dev\n\u003C/code>\u003C/pre>\n\u003Chr>\n\u003Ch2>Configuration Best Practices\u003C/h2>\n\u003Ch3>1. Update Immediately\u003C/h3>\n\u003Cp>Change placeholder values when you first set up:\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-javascript\">email: &quot;your-email@example.com&quot;  // ❌ Don&#39;t leave this\nemail: &quot;hello@yoursite.com&quot;      // ✅ Change to your email\n\u003C/code>\u003C/pre>\n\u003Ch3>2. Keep Legal Dates Current\u003C/h3>\n\u003Cpre>\u003Ccode class=\"language-javascript\">privacyPolicyLastUpdated: &quot;2025-01-15&quot;  // Update when you change policy\n\u003C/code>\u003C/pre>\n\u003Ch3>3. Remove Unused Socials\u003C/h3>\n\u003Cpre>\u003Ccode class=\"language-javascript\">// ❌ Don&#39;t leave fake links\nfacebook: &quot;https://facebook.com/statuessg&quot;\n\n// ✅ Remove or use your actual link\nfacebook: &quot;https://facebook.com/yourpage&quot;\n// Or remove the line entirely\n\u003C/code>\u003C/pre>\n\u003Ch3>4. Use Consistent Formatting\u003C/h3>\n\u003Cpre>\u003Ccode class=\"language-javascript\">// ✅ Good - consistent URL formats\ntwitter: &quot;https://twitter.com/handle&quot;\ngithub: &quot;https://github.com/user&quot;\n\n// ❌ Bad - inconsistent\ntwitter: &quot;twitter.com/handle&quot;  // Missing protocol\ngithub: &quot;https://github.com/user&quot;\n\u003C/code>\u003C/pre>\n\u003Ch3>5. Validate Email Addresses\u003C/h3>\n\u003Cp>Ensure emails are valid:\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-javascript\">email: &quot;hello@yoursite.com&quot;      // ✅ Valid\nemail: &quot;hello @ yoursite.com&quot;    // ❌ Invalid (spaces)\nemail: &quot;hello&quot;                    // ❌ Invalid (no domain)\n\u003C/code>\u003C/pre>\n\u003Chr>\n\u003Ch2>Common Configuration Patterns\u003C/h2>\n\u003Ch3>Startup/SaaS Site\u003C/h3>\n\u003Cpre>\u003Ccode class=\"language-javascript\">export const siteConfig = {\n  site: {\n    name: &quot;YourApp&quot;,\n    description: &quot;The best app for X&quot;,\n    url: &quot;https://yourapp.com&quot;,\n    author: &quot;YourApp Team&quot;\n  },\n  contact: {\n    email: &quot;hello@yourapp.com&quot;,\n    supportEmail: &quot;support@yourapp.com&quot;\n  },\n  social: {\n    twitter: &quot;https://twitter.com/yourapp&quot;,\n    github: &quot;https://github.com/yourorg&quot;\n  }\n};\n\u003C/code>\u003C/pre>\n\u003Ch3>Personal Blog\u003C/h3>\n\u003Cpre>\u003Ccode class=\"language-javascript\">export const siteConfig = {\n  site: {\n    name: &quot;John&#39;s Blog&quot;,\n    description: &quot;Thoughts on code and life&quot;,\n    url: &quot;https://johnblog.com&quot;,\n    author: &quot;John Doe&quot;\n  },\n  contact: {\n    email: &quot;john@johnblog.com&quot;\n  },\n  social: {\n    twitter: &quot;https://twitter.com/johndoe&quot;,\n    github: &quot;https://github.com/johndoe&quot;\n  }\n};\n\u003C/code>\u003C/pre>\n\u003Ch3>Documentation Site\u003C/h3>\n\u003Cpre>\u003Ccode class=\"language-javascript\">export const siteConfig = {\n  site: {\n    name: &quot;ProjectDocs&quot;,\n    description: &quot;Official documentation for Project&quot;,\n    url: &quot;https://docs.project.com&quot;,\n    author: &quot;Project Team&quot;\n  },\n  contact: {\n    email: &quot;docs@project.com&quot;\n  },\n  social: {\n    github: &quot;https://github.com/project/project&quot;,\n    discord: &quot;https://discord.gg/project&quot;\n  }\n};\n\u003C/code>\u003C/pre>\n\u003Chr>\n\u003Ch2>Troubleshooting\u003C/h2>\n\u003Ch3>Variables not showing in markdown\u003C/h3>\n\u003Cp>\u003Cstrong>Check:\u003C/strong>\u003C/p>\n\u003Col>\n\u003Cli>Is the variable name correct?\u003C/li>\n\u003Cli>Did you restart the dev server?\u003C/li>\n\u003Cli>Is the value defined in \u003Ccode>site.config.js\u003C/code>?\u003C/li>\n\u003C/ol>\n\u003Cp>\u003Cstrong>Fix:\u003C/strong>\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-bash\"># Restart dev server\nnpm run dev\n\u003C/code>\u003C/pre>\n\u003Ch3>Config changes not applying\u003C/h3>\n\u003Cp>\u003Cstrong>Build cache issue.\u003C/strong> Clear build artifacts:\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-bash\">rm -rf .svelte-kit build\nnpm run dev\n\u003C/code>\u003C/pre>\n\u003Ch3>TypeScript errors with config\u003C/h3>\n\u003Cp>Create a type definition file (optional):\u003C/p>\n\u003Cpre>\u003Ccode class=\"language-typescript\">// site.config.d.ts\nexport interface SiteConfig {\n  site: {\n    name: string;\n    description: string;\n    url: string;\n    author: string;\n  };\n  // ... other types\n}\n\u003C/code>\u003C/pre>\n\u003Chr>\n\u003Ch2>Next Steps\u003C/h2>\n\u003Cul>\n\u003Cli>\u003Cstrong>\u003Ca href=\"https://statue.dev\">Statue.dev\u003C/a>\u003C/strong> - Official documentation\u003C/li>\n\u003Cli>\u003Cstrong>\u003Ca href=\"/docs/new-site-checklist\">New Site Checklist\u003C/a>\u003C/strong> - Setup walkthrough\u003C/li>\n\u003Cli>\u003Cstrong>\u003Ca href=\"/docs/components\">Components\u003C/a>\u003C/strong> - Use config in components\u003C/li>\n\u003Cli>\u003Cstrong>\u003Ca href=\"/docs/themes\">Themes\u003C/a>\u003C/strong> - Style your site\u003C/li>\n\u003C/ul>\n",metadata:{title:"Site Configuration",description:"Configuring your Statue site with site.config.js",date:null,author:null,icon:"settings"}},directories:[{name:"blog",path:"content/blog",title:"Blog",url:"/blog"},{name:"docs",path:"content/docs",title:"Docs",url:"/docs"},{name:"legal",path:"content/legal",title:"Legal",url:"/legal"}],sidebarItems:[{title:"Getting Started with Statue",url:"/docs/get-started",order:1},{title:"Components",url:"/docs/components",order:2},{title:"New Site Checklist",url:"/docs/new-site-checklist",order:999},{title:"Routing",url:"/docs/routing",order:999},{title:"Search",url:"/docs/search",order:999},{title:"Site Configuration",url:"/docs/site-config",order:999},{title:"Templates",url:"/docs/templates",order:999},{title:"Themes",url:"/docs/themes",order:999}]},uses:{params:["slug"]}}],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
